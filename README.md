@@ -182,5 +182,45 @@ For the full detailed workflow, see:
 
 ---
 ```
+---
+
+### Project Summary
+
+This lab demonstrates the creation of a secure, production‑style VPC environment using AWS core networking services.  
+Key outcomes include:
+
+```
+- Built a fully isolated VPC with public and private subnets
+- Configured Internet Gateway and NAT Gateway for controlled internet access
+- Implemented public and private route tables with correct routing logic
+- Deployed a bastion host for secure SSH access into the VPC
+- Launched a private EC2 instance with no public exposure
+- Validated connectivity using SSH and NAT‑based internet access
+- Documented the entire build with 12 screenshots and a full README
+```
+
+This project reflects real‑world cloud engineering skills including network design, security best practices, and infrastructure documentation.
+
+---
+
+---
+
+### What I Learned
+
+This lab reinforced several important AWS networking and security concepts:
+
+```
+- How VPCs isolate cloud resources using CIDR blocks
+- The difference between public and private subnets
+- How Internet Gateways and NAT Gateways enable controlled internet access
+- How route tables determine traffic flow inside a VPC
+- How to use a bastion host for secure access to private resources
+- How to test connectivity and validate NAT functionality
+- How to structure and publish cloud projects on GitHub
+```
+
+These skills directly apply to real enterprise environments and align with AWS Cloud Practitioner and Solutions Architect Associate exam objectives.
+
+---
 
 ---
