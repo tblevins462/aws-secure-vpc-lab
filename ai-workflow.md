@@ -20,5 +20,8 @@ Used AI to understand proper NAT Gateway placement in a public subnet and why an
 ### Step 6 — AI Assistance
 Used AI to validate least‑privilege security group design and ensure proper isolation between public and private resources. AI helped confirm that the public security group should only allow SSH from my IP, while the private security group should only accept SSH from the public security group. AI also assisted in verifying that no 0.0.0.0/0 inbound rules existed on the private SG and that outbound rules remained open to support NAT Gateway egress.
 
-### **Step 7 — AI Assistance**
+### Step 7 — AI Assistance
 Used AI to walk through the EC2 launch configuration for both public and private instances. AI confirmed correct subnet placement, security group assignment, and key pair usage. AI also validated that t3.micro is Free Tier eligible in this region and ensured that the private instance launched without a public IP to maintain proper network isolation.
+
+### Step 8 — AI Assistance
+Used AI to troubleshoot SCP upload issues by identifying permission restrictions on the EC2 home directory and guiding the use of /tmp as a writable target. AI also confirmed correct key placement, permission settings, and the proper SSH workflow for connecting from the local machine to the public EC2 and then into the private EC2. This validated that routing, NAT Gateway configuration, and security groups were functioning as intended.
