@@ -115,6 +115,12 @@ Ran `sudo yum update -y` on the private EC2 instance to confirm outbound interne
 
 Below is a high‑level architecture diagram representing the secure VPC environment built in this lab. It includes the VPC, public and private subnets, Internet Gateway, NAT Gateway, route tables, and EC2 instances.
 
+---
+
+### Architecture Diagram
+
+Below is a high‑level architecture diagram representing the secure VPC environment built in this lab.
+
 ```
                 +-----------------------------+
                 |       AWS Region (us-east-1)|
@@ -146,9 +152,9 @@ Key:
 - Public Subnet routes 0.0.0.0/0 → IGW
 - Private Subnet routes 0.0.0.0/0 → NAT Gateway → IGW
 - SSH: Local → Bastion → Private EC2
+```
 
 ---
-
 
 ### AI Workflow (Summary)
 
