@@ -54,4 +54,9 @@ Launched two EC2 instances inside the VPC to complete the public and private com
 Screenshot:
 screenshots/09-ec2-instances.png
 
+### Step 8 — SSH Connectivity Test (Public → Private)
+
+In this step, I verified secure connectivity between the public and private EC2 instances. First, I SSH’d into the public EC2 instance from my local machine using the key pair. Then I securely copied the key pair file to the public instance, adjusted its permissions, and used it to SSH into the private EC2 instance using its private IP address. This confirmed that the VPC, subnets, route tables, NAT Gateway, and security groups were all configured correctly. The screenshot shows both SSH sessions in a single terminal window.
+
+![SSH Connectivity Test](screenshots/10-ssh-public-private.png)
 
