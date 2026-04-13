@@ -26,3 +26,11 @@ Created two subnets within the VPC:
 **Screenshots:**  
 - `screenshots/02-public-subnet.png`  
 - `screenshots/03-private-subnet.png`
+
+## Step 3 — Internet Gateway
+
+Created an Internet Gateway (`secure-vpc-lab-igw`) and attached it to the VPC (`secure-vpc-lab-vpc`).  
+This enables internet connectivity for resources placed in the public subnet.
+
+**Screenshot:**  
+- `screenshots/04-internet-gateway.png`
