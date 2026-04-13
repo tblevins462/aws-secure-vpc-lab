@@ -15,3 +15,11 @@ Used AI to confirm the difference between public and private route tables and ho
 Verified with AI that the public route table requires a default route (`0.0.0.0/0`) pointing to the Internet Gateway.
 Confirmed that the private route table should not point to the Internet Gateway and should remain isolated until the NAT Gateway is created.
 Asked AI to validate naming conventions and ensure consistency across route table resources.
+
+## Step 5 — NAT Gateway (AI Workflow Notes)
+
+Asked AI to explain NAT Gateway placement and why it must be created in a public subnet.
+Clarified with AI the difference between Regional and Zonal NAT Gateways and selected the correct option for this architecture.
+Used AI guidance to correctly attach an Elastic IP and understand why NAT requires one for outbound traffic.
+Verified with AI that the private route table should route `0.0.0.0/0` to the NAT Gateway for secure outbound internet access.
+Confirmed the final routing configuration and validated that the NAT Gateway was functioning as intended before moving to the next step.
