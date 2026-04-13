@@ -34,3 +34,10 @@ This enables internet connectivity for resources placed in the public subnet.
 
 **Screenshot:**  
 - `screenshots/04-internet-gateway.png`
+
+Step 5 — NAT Gateway
+Created a NAT Gateway (secure-vpc-lab-natgw) in the public subnet and attached an Elastic IP address. Updated the private route table to route 0.0.0.0/0 traffic to the NAT Gateway. This allows private subnet resources to securely access the internet for updates and external services without exposing them to inbound public traffic.
+
+Screenshot:
+
+screenshots/07-nat-gateway-route.png
