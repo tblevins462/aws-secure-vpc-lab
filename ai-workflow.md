@@ -8,18 +8,11 @@ AI also helped structure documentation and ensure consistent naming conventions 
 ### Step 3 — AI Assistance
 Used AI to confirm the correct Internet Gateway configuration and verify that the IGW was properly attached to the VPC.  
 AI also helped troubleshoot AWS console UI inconsistencies and ensured the IGW attachment was validated through the resource details page.
-
-## Step 4 — Route Tables (AI Workflow Notes)
-
-Used AI to confirm the difference between public and private route tables and how each should be associated with subnets.
-Verified with AI that the public route table requires a default route (`0.0.0.0/0`) pointing to the Internet Gateway.
-Confirmed that the private route table should not point to the Internet Gateway and should remain isolated until the NAT Gateway is created.
-Asked AI to validate naming conventions and ensure consistency across route table resources.
-
-## Step 5 — NAT Gateway (AI Workflow Notes)
-
-Asked AI to explain NAT Gateway placement and why it must be created in a public subnet.
-Clarified with AI the difference between Regional and Zonal NAT Gateways and selected the correct option for this architecture.
-Used AI guidance to correctly attach an Elastic IP and understand why NAT requires one for outbound traffic.
-Verified with AI that the private route table should route `0.0.0.0/0` to the NAT Gateway for secure outbound internet access.
+internet access.
 Confirmed the final routing configuration and validated that the NAT Gateway was functioning as intended before moving to the next step.
+
+### Step 4 — AI Assistance
+Used AI to confirm the correct design and separation of public and private route tables and how each should be associated with the appropriate subnet. AI also helped validate that the public route table needed a 0.0.0.0/0 route to the Internet Gateway while the private route table should remain isolated until the NAT Gateway was introduced.
+
+### Step 5 — AI Assistance
+Used AI to understand proper NAT Gateway placement in a public subnet and why an Elastic IP is required for outbound internet access. AI also helped troubleshoot AWS console options (Zonal vs Regional, manual EIP selection) and verify that routing 0.0.0.0/0 from the private route table to the NAT Gateway would provide secure outbound-only internet connectivity for private resources.
