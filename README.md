@@ -109,14 +109,6 @@ Ran `sudo yum update -y` on the private EC2 instance to confirm outbound interne
 
 ---
 
----
-
-### Architecture Diagram
-
-Below is a high‑level architecture diagram representing the secure VPC environment built in this lab. It includes the VPC, public and private subnets, Internet Gateway, NAT Gateway, route tables, and EC2 instances.
-
----
-
 ### Architecture Diagram
 
 Below is a high‑level architecture diagram representing the secure VPC environment built in this lab.
@@ -181,8 +173,6 @@ For the full detailed workflow, see:
 **`ai-workflow.md`**
 
 ---
-```
----
 
 ### Project Summary
 
@@ -203,8 +193,6 @@ This project reflects real‑world cloud engineering skills including network de
 
 ---
 
----
-
 ### What I Learned
 
 This lab reinforced several important AWS networking and security concepts:
@@ -220,7 +208,5 @@ This lab reinforced several important AWS networking and security concepts:
 ```
 
 These skills directly apply to real enterprise environments and align with AWS Cloud Practitioner and Solutions Architect Associate exam objectives.
-
----
 
 ---
