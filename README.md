@@ -48,8 +48,4 @@ Created a NAT Gateway (`secure-vpc-lab-natgw`) in the public subnet and attached
 **Screenshot:**  
 - `screenshots/07-nat-gateway-route.png`
 
-## Step 6 — Security Groups
-Created two security groups to enforce least‑privilege access across the VPC. The public security group allows inbound SSH access only from my IP address, ensuring secure access to the public‑facing instance. The private security group allows inbound SSH access only from the public security group, preventing any direct access from the internet and maintaining strict isolation for private subnet resources.
 
-Screenshot:
-screenshots/08-security-groups.png
