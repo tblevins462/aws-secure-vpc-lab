@@ -108,3 +108,44 @@ Ran `sudo yum update -y` on the private EC2 instance to confirm outbound interne
 `screenshots/12-private-instance-internet-test.png`
 
 ---
+
+---
+
+### Architecture Diagram
+
+Below is a high‑level architecture diagram representing the secure VPC environment built in this lab. It includes the VPC, public and private subnets, Internet Gateway, NAT Gateway, route tables, and EC2 instances.
+
+```
+                +-----------------------------+
+                |       AWS Region (us-east-1)|
+                |                             |
+                |   +---------------------+   |
+                |   |   VPC 10.0.0.0/16   |   |
+                |   |                     |   |
+                |   |  +---------------+  |   |
+Internet        |   |  | Public Subnet |  |   |
+Gateway <------>|---|--| 10.0.1.0/24   |  |   |
+(IGW)           |   |  +-------+-------+  |   |
+                |   |          | Bastion  |   |
+                |   |          | EC2      |   |
+                |   |          +----------+   |
+                |   |                     |   |
+                |   |  +---------------+  |   |
+                |   |  | Private Subnet|  |   |
+                |   |  | 10.0.2.0/24   |  |   |
+                |   |  +-------+-------+  |   |
+                |   |          | Private  |   |
+                |   |          | EC2      |   |
+                |   |          +----------+   |
+                |   |                     |   |
+                |   +---------------------+   |
+                |                             |
+                +-----------------------------+
+
+Key:
+- Public Subnet routes 0.0.0.0/0 → IGW
+- Private Subnet routes 0.0.0.0/0 → NAT Gateway → IGW
+- SSH: Local → Bastion → Private EC2
+```
+
+---
