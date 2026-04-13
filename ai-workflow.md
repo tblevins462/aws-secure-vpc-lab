@@ -16,3 +16,6 @@ Used AI to confirm the correct design and separation of public and private route
 
 ### Step 5 — AI Assistance
 Used AI to understand proper NAT Gateway placement in a public subnet and why an Elastic IP is required for outbound internet access. AI also helped troubleshoot AWS console options (Zonal vs Regional, manual EIP selection) and verify that routing 0.0.0.0/0 from the private route table to the NAT Gateway would provide secure outbound-only internet connectivity for private resources.
+
+### Step 6 — AI Assistance
+Used AI to validate least‑privilege security group design and ensure proper isolation between public and private resources. AI helped confirm that the public security group should only allow SSH from my IP, while the private security group should only accept SSH from the public security group. AI also assisted in verifying that no 0.0.0.0/0 inbound rules existed on the private SG and that outbound rules remained open to support NAT Gateway egress.
