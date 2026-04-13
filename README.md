@@ -146,6 +146,34 @@ Key:
 - Public Subnet routes 0.0.0.0/0 → IGW
 - Private Subnet routes 0.0.0.0/0 → NAT Gateway → IGW
 - SSH: Local → Bastion → Private EC2
+
+---
+
+### AI Workflow (Summary)
+
+This section provides a high‑level overview of how AI assisted throughout the build.
+
+```
+1. Architecture Planning  
+   - AI helped validate CIDR sizing, subnet layout, and overall VPC design.
+
+2. AWS Console Navigation  
+   - Provided guidance for locating VPC, Subnets, Route Tables, NAT Gateway, and EC2 settings.
+
+3. Troubleshooting  
+   - Assisted with SSH issues, SCP upload errors, NAT routing validation, and AWS console inconsistencies.
+
+4. Documentation  
+   - Helped structure the README, step formatting, naming conventions, and screenshot organization.
+
+5. GitHub Publishing  
+   - Guided the creation of the repo, PAT authentication, and final push of all 12 screenshots.
+```
+
+For the full detailed workflow, see:  
+**`ai-workflow.md`**
+
+---
 ```
 
 ---
