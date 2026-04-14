@@ -1,5 +1,11 @@
 # AWS Secure VPC Lab
 
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![VPC](https://img.shields.io/badge/VPC-Networking-blue?style=for-the-badge)
+![EC2](https://img.shields.io/badge/EC2-Instances-orange?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-Systems-black?style=for-the-badge&logo=linux)
+![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
 This project demonstrates the creation of a secure AWS VPC environment with public and private subnets, an Internet Gateway, a NAT Gateway, route tables, and EC2 instances configured for secure access. All screenshots are stored in the `screenshots/` directory.
 
 ---
